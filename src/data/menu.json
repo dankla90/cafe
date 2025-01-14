@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Bavarois Mangue",
+    "description": "Our new summer creation has arrived! And there’s only one way to enjoy it: in one bite, like a boss 😎 if you dare. .",
+    "price": "89",
+    "category": "food",
+    "image": "Bavarois Mangue.png"
+  },
+  {
+    "id": 2,
+    "name": "Chou Chérie",
+    "description": "Our famous Choux pastry dressed with a pretty red craquelin and topped with cherry jelly coulis. Filled with a tastefull cherry cream",
+    "price": "60",
+    "category": "food",
+    "image": "Chou Chérie.png"
+  },
+  {
+    "id": 3,
+    "name": "Bavarois Mangue2",
+    "description": "Our new summer creation has arrived! And there’s only one way to enjoy it: in one bite, like a boss 😎 if you dare. .",
+    "price": "89",
+    "category": "food",
+    "image": "Bavarois Mangue.png"
+  },
+  {
+    "id": 4,
+    "name": "Chou Chérie2",
+    "description": "Our famous Choux pastry dressed with a pretty red craquelin and topped with cherry jelly coulis. Filled with a tastefull cherry cream",
+    "price": "60",
+    "category": "food",
+    "image": "Chou Chérie.png"
+  },
+  {
+    "id": 5,
+    "name": "Bavarois Mangue",
+    "description": "Our new summer creation has arrived! And there’s only one way to enjoy it: in one bite, like a boss 😎 if you dare. .",
+    "price": "89",
+    "category": "food",
+    "image": "Bavarois Mangue.png"
+  },
+  {
+    "id": 6,
+    "name": "Chou Chérie",
+    "description": "Our famous Choux pastry dressed with a pretty red craquelin and topped with cherry jelly coulis. Filled with a tastefull cherry cream",
+    "price": "60",
+    "category": "food",
+    "image": "Chou Chérie.png"
+  },
+  {
+    "id": 7,
+    "name": "Bavarois Mangue2",
+    "description": "Our new summer creation has arrived! And there’s only one way to enjoy it: in one bite, like a boss 😎 if you dare. .",
+    "price": "89",
+    "category": "food",
+    "image": "Bavarois Mangue.png"
+  },
+  {
+    "id": 8,
+    "name": "Chou Chérie2",
+    "description": "Our famous Choux pastry dressed with a pretty red craquelin and topped with cherry jelly coulis. Filled with a tastefull cherry cream",
+    "price": "60",
+    "category": "food",
+    "image": "Chou Chérie.png"
+  },
+  {
+    "id": 9,
+    "name": "Bavarois Mangue",
+    "description": "Our new summer creation has arrived! And there’s only one way to enjoy it: in one bite, like a boss 😎 if you dare. .",
+    "price": "89",
+    "category": "food",
+    "image": "Bavarois Mangue.png"
+  },
+  {
+    "id": 10,
+    "name": "Chou Chérie",
+    "description": "Our famous Choux pastry dressed with a pretty red craquelin and topped with cherry jelly coulis. Filled with a tastefull cherry cream",
+    "price": "60",
+    "category": "food",
+    "image": "Chou Chérie.png"
+  },
+  {
+    "id": 11,
+    "name": "Bavarois Mangue2",
+    "description": "Our new summer creation has arrived! And there’s only one way to enjoy it: in one bite, like a boss 😎 if you dare. .",
+    "price": "89",
+    "category": "food",
+    "image": "Bavarois Mangue.png"
+  },
+  {
+    "id": 12,
+    "name": "Chou Chérie2",
+    "description": "Our famous Choux pastry dressed with a pretty red craquelin and topped with cherry jelly coulis. Filled with a tastefull cherry cream",
+    "price": "60",
+    "category": "food",
+    "image": "Chou Chérie.png"
+  }
+  ]
+  
