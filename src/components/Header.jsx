@@ -13,7 +13,7 @@ const HeaderWrapper = styled.header`
   background-repeat: no-repeat;
   background-position: center 80%;
   box-shadow: ${(props) => (props.hidden ? 'none' : '0 2px 4px rgba(0, 0, 0, 0.1)')};
-  z-index: 1100;
+  z-index: 900;
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   transform: ${(props) => (props.hidden ? 'translateY(-100%)' : 'translateY(0)')};
   display: flex;
