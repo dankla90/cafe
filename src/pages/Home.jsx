@@ -97,7 +97,8 @@ const OpeningHours = styled.div`
     font-size: 1.1rem;
     color: #4a3a29;
     margin: 8px 0;
-    padding-left: 20px;
+    padding-inline-start: 20px;
+    list-style: none;
   }
 `;
 
