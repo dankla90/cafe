@@ -20,7 +20,6 @@ const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: center;
 
-  /* Add a dark overlay */
   &::before {
     content: '';
     position: absolute;
@@ -28,66 +27,75 @@ const HeaderWrapper = styled.header`
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 1; /
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
 
-  /* Add responsive behavior for smaller screens */
   @media (max-width: 768px) {
-    height: 100px; 
+    height: 100px;
   }
 `;
 
 const Logo = styled(Link)`
   font-family: 'Gwendolyn', serif;
   font-size: 5rem;
-  color: white; 
+  color: white;
   text-decoration: none;
   padding-left: 0.5em;
-  z-index: 2; 
+  z-index: 2;
 
   &:hover {
     color: #8c614c;
   }
 
-  /* Add responsive behavior for smaller screens */
   @media (max-width: 768px) {
-    font-size: 2.3rem; 
+    font-size: 2.3rem;
   }
 `;
 
 const HeaderLogo = styled.img`
   padding-top: 5px;
-  height: 10em; 
+  height: 10em;
   width: auto;
-  z-index: 2; 
+  z-index: 2;
 
   @media (max-width: 400px) {
-    display: none; 
+    display: none;
   }
 
   @media (max-width: 768px) {
-    height: 5em; 
+    height: 5em;
   }
 `;
 
 const Header = () => {
   const [hidden, setHidden] = useState(false);
-  const [headerHeight, setHeaderHeight] = useState(250);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      const threshold = headerHeight * 0.5; // 60% of the header height
-      setHidden(currentScrollY > lastScrollY && currentScrollY > threshold);
+      const threshold = 100; // Threshold to hide/reveal the header
+      const nearTopThreshold = 20; // Distance from the top for the header to reappear
+
+      if (currentScrollY > lastScrollY && currentScrollY > threshold) {
+        // User is scrolling down past the threshold
+        setHidden(true);
+      } else if (currentScrollY < nearTopThreshold) {
+        // User scrolls close to the top
+        setHidden(false);
+      }
+
+      // Update last scroll position
       lastScrollY = currentScrollY;
+      setScrollPosition(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [headerHeight]);
+  }, []);
 
   return (
     <HeaderWrapper hidden={hidden}>

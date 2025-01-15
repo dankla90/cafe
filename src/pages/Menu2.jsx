@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Menu from '../components/Menu';
+import Social from '../components/Socials';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -111,6 +112,7 @@ const MenuPage = () => {
             We also cater to dietary preferences with a variety of vegetarian and gluten-free treats. Come
             and experience the magic of Le Pomme!
           </p>
+          <Social />
         </TextSection>
         <ImageSection>
           <p>This is where the instagram pictues would go</p>

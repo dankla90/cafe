@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import Menu from '../components/Menu'; // Import Menu component
+import Menu from '../components/Menu'; 
+import Social from '../components/Socials';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -82,6 +83,7 @@ const AboutUs = () => {
             ambiance since its inception. Our passion for quality and community drives
             everything we do.
           </p>
+          <Social />
         </TextSection>
 
         {/* Instagram Feed Section */}

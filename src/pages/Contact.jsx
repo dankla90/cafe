@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Menu from '../components/Menu';
+import Social from '../components/Socials';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -37,7 +38,7 @@ const TextSection = styled.section`
   flex-direction: column;
   gap: 20px;
 
-  img {
+  #FrontPhoto {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -61,15 +62,7 @@ const TextSection = styled.section`
     }
   }
 
-  a {
-    color: #8c614c;
-    text-decoration: none;
-    font-weight: bold;
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 `;
 const MapSection = styled.section`
   flex: 1;  
@@ -104,13 +97,15 @@ const Contact = () => {
       <Menu />
       <MainContent>
         <TextSection>
-          <img src="/contactImage.jpg" alt="Contact Us" />
+          <img src="/contactImage.jpg" id='FrontPhoto' alt="Contact Us" />
           <h1>Contact Us</h1>
           <p>Reach out to us for reservations, inquiries, or feedback.</p>
           <p>
             Email: <a href="mailto:contact@lecafepomme.com">contact@lecafepomme.com</a>
           </p>
           <p>Phone: +123 456 789</p>
+
+          <Social />
         </TextSection>
         <MapSection>
           <iframe

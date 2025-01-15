@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Menu from '../components/Menu';
+import Social from '../components/Socials';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -43,6 +44,7 @@ const TextSection = styled.section`
     line-height: 1.8;
     margin: 8px 0;
     text-align: justify;
+    padding-left: 50px;
   }
 
   li {
@@ -60,6 +62,7 @@ const TextSection = styled.section`
 
     p {
       font-size: 1rem;
+      padding-left: 20px;
     }
 
     li {
@@ -87,12 +90,14 @@ const OpeningHours = styled.div`
     font-size: 1.3rem;
     color: #6b4e3d;
     margin-bottom: 12px;
+    padding-left: 0px;
   }
 
   li {
     font-size: 1.1rem;
     color: #4a3a29;
     margin: 8px 0;
+    padding-left: 20px;
   }
 `;
 
@@ -219,6 +224,7 @@ const Home = () => {
             <li>Saturday: 10-17</li>
             <li>Sunday: 10-16</li>
           </OpeningHours>
+          <Social />
         </TextSection>
         <ImageSection>
           <ImageWrapper>
