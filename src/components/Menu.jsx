@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import { FaArrowUp } from 'react-icons/fa';
 
 const MenuWrapper = styled.nav`
   position: fixed;
-  right: 0;
-  top: 55%;
-  transform: translateY(-50%);
+  top: 20px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -21,25 +21,31 @@ const MenuWrapper = styled.nav`
     background: #fdf6e3;
     transform: ${(props) => (props.$isOpen ? 'translateX(0)' : 'translateX(100%)')};
     transition: transform 0.3s ease-in-out;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 20px;
-    display: flex;
   }
 `;
 
 const MenuItem = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 20px;
   background: #8c614c;
-  color: #fff;
-  padding: 20px;
+  color: white;
   border-radius: 10px 0 0 10px;
-  text-align: center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, background 0.3s;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  text-align: left;
+  transition: background 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    transform: scale(1.1);
+    background: #d4a373;
+    transform: scale(1.05);
   }
 
   &.active {
@@ -48,15 +54,20 @@ const MenuItem = styled(NavLink)`
   }
 
   @media (max-width: 768px) {
-    background: none;
-    color: #8c614c;
-    padding: 10px;
-    text-align: left;
-    font-family: 'Georgia', serif;
-    font-size: 1.5em;
-    border: none;
-    border-bottom: 1px solid #8c614c;
     width: 80%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0;
+  }
+`;
+
+const Icon = styled.img`
+  width: 30px;
+  height: 30px;
+
+  @media (max-width: 768px) {
+    width: 25px;
+    height: 25px;
   }
 `;
 
@@ -103,45 +114,86 @@ const ToggleButton = styled.button`
   }
 `;
 
+const BackToTopButton = styled.button`
+  display: ${(props) => (props.show ? 'flex' : 'none')};
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #8c614c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background: #d4a373;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+`;
+
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const location = useLocation();
 
+  // Close menu and scroll to top when navigating
   useEffect(() => {
     window.scrollTo(0, 0);
     setIsOpen(false);
   }, [location]);
 
+  // Show "Back to Top" button when scrolling down
+  useEffect(() => {
+    const handleScroll = () => {
+      const pageHeight = window.innerHeight;
+      setShowBackToTop(window.scrollY > pageHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
     <>
-      <ToggleButton
-        $isOpen={isOpen}
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-        aria-expanded={isOpen}
-      >
+      <ToggleButton $isOpen={isOpen} onClick={toggleMenu}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
       </ToggleButton>
+
       <MenuWrapper $isOpen={isOpen}>
-        <MenuItem to="/" end>
-          Home
-        </MenuItem>
-        <MenuItem to="/menu">
-          Menu
-        </MenuItem>
-        <MenuItem to="/menu2">
-          Menu2
-        </MenuItem>
-        <MenuItem to="/aboutus">
-          About Us
-        </MenuItem>
-        <MenuItem to="/contact">
-          Contact
-        </MenuItem>
+        {location.pathname !== '/' && (
+          <MenuItem to="/" aria-label="Home">
+            <Icon src="/HomeIcon.png" alt="Home Icon" />
+            Home
+          </MenuItem>
+        )}
+        {location.pathname !== '/contact' && (
+          <MenuItem to="/contact" aria-label="Contact">
+            <Icon src="/ContactIcon.png" alt="Contact Icon" />
+            Contact
+          </MenuItem>
+        )}
+      <BackToTopButton show={showBackToTop ? 'true' : undefined} onClick={scrollToTop} aria-label="Back to Top">
+        <FaArrowUp />
+      </BackToTopButton>
+
       </MenuWrapper>
     </>
   );

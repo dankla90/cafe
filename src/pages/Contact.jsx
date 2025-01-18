@@ -101,9 +101,9 @@ const Contact = () => {
           <h1>Contact Us</h1>
           <p>Reach out to us for reservations, inquiries, or feedback.</p>
           <p>
-            Email: <a href="mailto:contact@lecafepomme.com">contact@lecafepomme.com</a>
+            Email: <a href="mailto:lafrenchtouch.co@gmail.com">lafrenchtouch.co@gmail.com</a>
           </p>
-          <p>Phone: +123 456 789</p>
+          <p>Phone: +47 936 10 541</p>
 
           <Social />
         </TextSection>

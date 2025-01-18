@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Menu from '../components/Menu';
 import Social from '../components/Socials';
+import EventComponent from '../components/Event';  // Importing EventComponent
 
 const PageWrapper = styled.div`
   display: flex;
@@ -121,7 +122,7 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 8px;
   transition: opacity 1.5s ease;
-  
+
   &.hidden {
     opacity: 0;
   }
@@ -246,6 +247,8 @@ const Home = () => {
           </Controls>
         </ImageSection>
       </MainContent>
+
+      <EventComponent />
     </PageWrapper>
   );
 };
