@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Menu from '../components/Menu';
 import Social from '../components/Socials';
-import EventComponent from '../components/Event';  // Importing EventComponent
+import EventComponent from '../components/Event';
+import InstagramPost from '../components/InstagramPost';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -11,7 +12,19 @@ const PageWrapper = styled.div`
   background: #fdf6e3;
 `;
 
-const MainContent = styled.main`
+const UpperSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh; /* At least one screen length */
+
+  @media (max-width: 768px) {
+      min-height: 90vh;
+  }
+
+`;
+
+const MainContent = styled.div`
   flex: 1;
   margin-top: 100px;
   padding: 20px;
@@ -22,6 +35,26 @@ const MainContent = styled.main`
   @media (max-width: 768px) {
     flex-direction: column;
     padding-top: 20px;
+  }
+`;
+
+const LowerSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+`;
+
+const LowerContentWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
@@ -107,6 +140,12 @@ const ImageSection = styled.section`
   flex: 1;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+
 `;
 
 const ImageWrapper = styled.div`
@@ -170,26 +209,21 @@ const Home = () => {
     { old: '/OldPictureCafe3.jpg', new: '/NewPictureCafe2.png' },
   ];
 
-  // References for timeouts and transitions
   const transitionTimeoutRef = useRef(null);
   const cycleTimeoutRef = useRef(null);
 
   useEffect(() => {
-    // Prevent automatic transitions during a manual change
     if (isTransitioning) return;
 
-    // Transition from old to new after 3 seconds
     transitionTimeoutRef.current = setTimeout(() => {
       setShowNewImage(true);
-      setIsTransitioning(true); // Mark as transitioning
+      setIsTransitioning(true);
     }, 3000);
 
-    // Automatically switch to the next set after 10 seconds
     cycleTimeoutRef.current = setTimeout(() => {
       handleNext();
     }, 10000);
 
-    // Cleanup timeouts on unmount or when the component updates
     return () => {
       clearTimeout(transitionTimeoutRef.current);
       clearTimeout(cycleTimeoutRef.current);
@@ -197,14 +231,14 @@ const Home = () => {
   }, [currentImageIndex, isTransitioning]);
 
   const handleNext = () => {
-    setIsTransitioning(false); // Allow new transitions
-    setShowNewImage(false); // Start by showing the old image
+    setIsTransitioning(false);
+    setShowNewImage(false);
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setIsTransitioning(false); // Allow new transitions
-    setShowNewImage(false); // Start by showing the old image
+    setIsTransitioning(false);
+    setShowNewImage(false);
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
@@ -213,42 +247,56 @@ const Home = () => {
   return (
     <PageWrapper>
       <Menu />
-      <MainContent>
-        <TextSection>
-          <h1>Welcome to Our Cafe</h1>
-          <DecorativeLine />
-          <p>Discover the best coffee, pastries, and cozy vibes.</p>
-          <p>We offer a delightful experience for all coffee lovers!</p>
-          <DecorativeLine />
-          <OpeningHours>
-            <p>Opening hours this winter:</p>
-            <li>Monday-Friday: 9-17</li>
-            <li>Saturday: 10-17</li>
-            <li>Sunday: 10-16</li>
-          </OpeningHours>
-          <Social />
-        </TextSection>
-        <ImageSection>
-          <ImageWrapper>
-            <Image
-              src={images[currentImageIndex].old}
-              alt={`Old Image ${currentImageIndex + 1}`}
-              className={showNewImage ? 'hidden' : 'visible'}
-            />
-            <Image
-              src={images[currentImageIndex].new}
-              alt={`New Image ${currentImageIndex + 1}`}
-              className={showNewImage ? 'visible' : 'hidden'}
-            />
-          </ImageWrapper>
-          <Controls>
-            <button onClick={handlePrev}>&#8249;</button>
-            <button onClick={handleNext}>&#8250;</button>
-          </Controls>
-        </ImageSection>
-      </MainContent>
+      <UpperSection>
+        <MainContent>
+          <TextSection>
+            <h1>Welcome to Our Cafe</h1>
+            <DecorativeLine />
+            <p>Discover the best coffee, pastries, and cozy vibes.</p>
+            <p>We offer a delightful experience for all coffee lovers!</p>
+            <DecorativeLine />
+            <OpeningHours>
+              <p>Opening hours this winter:</p>
+              <li>Monday-Friday: 9-17</li>
+              <li>Saturday: 10-17</li>
+              <li>Sunday: 10-16</li>
+            </OpeningHours>
+            <Social />
+          </TextSection>
+          <ImageSection>
+            <ImageWrapper>
+              <Image
+                src={images[currentImageIndex].old}
+                alt={`Old Image ${currentImageIndex + 1}`}
+                className={showNewImage ? 'hidden' : 'visible'}
+              />
+              <Image
+                src={images[currentImageIndex].new}
+                alt={`New Image ${currentImageIndex + 1}`}
+                className={showNewImage ? 'visible' : 'hidden'}
+              />
+            </ImageWrapper>
+            <Controls>
+              <button onClick={handlePrev}>&#8249;</button>
+              <button onClick={handleNext}>&#8250;</button>
+            </Controls>
+          </ImageSection>
+        </MainContent>
+      </UpperSection>
 
-      <EventComponent />
+      <LowerSection>
+        <LowerContentWrapper>
+          <InstagramPost url="https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&amp;utm_campaign=loading" />
+          <TextSection>
+            <h1>About Our Instagram</h1>
+            <p>Follow us on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe.</p>
+          </TextSection>
+        </LowerContentWrapper>
+
+        <EventComponent />
+        {/* Uncomment the next line to display the event component */}
+        {/* <EventComponent /> */}
+      </LowerSection>
     </PageWrapper>
   );
 };

@@ -117,28 +117,35 @@ const ToggleButton = styled.button`
 const BackToTopButton = styled.button`
   display: ${(props) => (props.show ? 'flex' : 'none')};
   align-items: center;
+  gap: 10px;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  padding: 25px 20px;
   background: #8c614c;
   color: white;
   border: none;
-  border-radius: 50%;
+  border-radius: 10px 0 0 10px;
+  font-family: 'Georgia', serif;
   font-size: 1.2rem;
+  text-align: left;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease;
 
   &:hover {
     background: #d4a373;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0;
     font-size: 1rem;
+    padding: 20px 10px;
   }
 `;
+
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -19,12 +19,16 @@ const EventContainer = styled.div`
     color: #4a3a29;
     line-height: 1.8;
   }
-
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
   a {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #1877f2;
+    padding: 40px 100px;
+    background-color:rgb(215, 139, 89);
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
@@ -42,6 +46,7 @@ const EventComponent = () => {
     <EventContainer>
       <h3>Upcoming Event</h3>
       <p>Join us this weekend for a special event featuring live music, coffee tastings, and more!</p>
+      <img src="/EventImage.jpg" alt="This describes an event we are havning etc...." />
       <a href="https://www.facebook.com/events/example" target="_blank" rel="noopener noreferrer">
         Learn More
       </a>
