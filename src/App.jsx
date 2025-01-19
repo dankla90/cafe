@@ -4,10 +4,8 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Menu from './pages/Menu';
-import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
-import Menu2 from './pages/Menu2';
+
 
 const PageWrapper = styled.div`
   display: flex;
