@@ -5,6 +5,35 @@ import Social from '../components/Socials';
 import EventComponent from '../components/Event';
 import InstagramPost from '../components/InstagramPost';
 
+
+
+/* 
+To make changes to the website online: 
+    - First make the changes here.
+    - Second in the terminal run "npm run build" to make sure there is no errors
+    . Third run "npm run deploy" this redeploys the website, the changes should be live after a few minutes, you can see on github. 
+
+To test website changes on a pc locally:
+    - in the terminal run "npm i" or "npm install"
+    - then run "npm run dev" it should say what adress the page is live in usually http://localhost:5173/
+
+  - To see changes in the test browser just make a change here and press controll + S to save and it should be live in your browser locally.
+
+
+After making changes to the website, remember to push a change to the github. 
+    - If using github desktop, you need to add a name for the commit to be able to push it
+
+
+To add an event, just edit the evnent component and remove the commented out event component down in the "lowersection"
+    - You need to remmeber to change the photo also, It is a bit clunky, but it should be simple to do. 
+*/
+
+
+
+
+
+
+
 const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,7 +45,7 @@ const UpperSection = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-height: 100vh; /* At least one screen length */
+  min-height: 100vh; 
 
   @media (max-width: 768px) {
       min-height: 90vh;
@@ -192,10 +221,10 @@ const Controls = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
 
     &:hover {
-      background: #b7946e;
+      background: #d78e41;
     }
   }
 `;
