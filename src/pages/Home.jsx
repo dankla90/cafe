@@ -283,7 +283,6 @@ const Home = () => {
             <DecorativeLine />
             <p>Discover the best coffee, pastries, and cozy vibes.</p>
             <p>We offer a delightful experience for all coffee lovers!</p>
-            <p>We have all the best of France right here in Bergen</p>
             <DecorativeLine />
             <OpeningHours>
               <p>Opening hours this winter:</p>
