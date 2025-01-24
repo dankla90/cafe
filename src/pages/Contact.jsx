@@ -97,7 +97,8 @@ const Contact = () => {
       <Menu />
       <MainContent>
         <TextSection>
-          <img src="/contactImage.jpg" id='FrontPhoto' alt="Contact Us" />
+          <img src={`${process.env.PUBLIC_URL}/contactImage.jpg`}
+           id='FrontPhoto' alt="Contact Us" />
           <h1>Contact Us</h1>
           <p>Reach out to us for reservations, inquiries, or feedback.</p>
           <p>

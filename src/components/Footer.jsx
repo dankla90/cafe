@@ -11,6 +11,7 @@ const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
 `;
 
 const FooterLogo = styled.img`
@@ -19,12 +20,19 @@ const FooterLogo = styled.img`
   vertical-align: middle; 
 `;
 
+const FooterText = styled.span`
+  font-size: 0.9em; /* Adjust font size for better balance */
+`;
+
 const Footer = () => {
   return (
     <FooterWrapper>
-      <p>© 2024 Le Café Pomme | All rights reserved</p>
-      <FooterLogo src="/Logo.png" alt="Cafe Pomme Logo" /> 
-      <p>Website by Daniel Klausen</p>
+      <FooterText>© 2024 Le Café Pomme | All rights reserved</FooterText>
+      <FooterLogo
+        src={`${process.env.PUBLIC_URL}/Logo.png`}
+        alt="Le Café Pomme Logo"
+      />
+      <FooterText>Website by Daniel Klausen</FooterText>
     </FooterWrapper>
   );
 };

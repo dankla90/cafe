@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lecafepomme.no",
+  "homepage": "https://dankla90.github.io/cafe/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
