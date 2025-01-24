@@ -235,7 +235,7 @@ const Home = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const images = [
     { old: '/OldPictureCafe2.jpg', new: '/NewPictureCafe.png' },
-    { old: '/OldPictureCafe3.jpg', new: '/NewPictureCafe2.png' },
+
   ];
 
   const transitionTimeoutRef = useRef(null);
