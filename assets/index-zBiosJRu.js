@@ -54,7 +54,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   top: 0;
   width: 100%;
   height: 250px;
-  background-image: url('/OldPictureCafe.jpg');
+  background-image: url('cafe//OldPictureCafe.jpg');
   background-color: ${o=>o.hidden?"transparent":"rgba(255, 255, 255, 0.5)"};
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -257,7 +257,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     font-size: 1rem;
     padding: 20px 10px;
   }
-`,Wd=()=>{const[o,u]=P.useState(!1),[a,s]=P.useState(!1),f=vn();P.useEffect(()=>{window.scrollTo(0,0),u(!1)},[f]),P.useEffect(()=>{const w=()=>{const g=window.innerHeight;s(window.scrollY>g)};return window.addEventListener("scroll",w),()=>window.removeEventListener("scroll",w)},[]);const d=()=>{window.scrollTo({top:0,behavior:"smooth"})},m=()=>u(w=>!w);return M.jsxs(M.Fragment,{children:[M.jsxs(Ag,{$isOpen:o,onClick:m,children:[M.jsx("div",{className:"line"}),M.jsx("div",{className:"line"}),M.jsx("div",{className:"line"})]}),M.jsxs($g,{$isOpen:o,children:[f.pathname!=="/"&&M.jsxs(Kf,{to:"/","aria-label":"Home",children:[M.jsx(Gf,{src:"/HomeIcon.png",alt:"Home Icon"}),"Home"]}),f.pathname!=="/contact"&&M.jsxs(Kf,{to:"/contact","aria-label":"Contact",children:[M.jsx(Gf,{src:"/ContactIcon.png",alt:"Contact Icon"}),"Contact"]}),M.jsx(Ug,{show:a?"true":void 0,onClick:d,"aria-label":"Back to Top",children:M.jsx(Mg,{})})]})]})},Bg=se.div`
+`,Wd=()=>{const[o,u]=P.useState(!1),[a,s]=P.useState(!1),f=vn();P.useEffect(()=>{window.scrollTo(0,0),u(!1)},[f]),P.useEffect(()=>{const w=()=>{const g=window.innerHeight;s(window.scrollY>g)};return window.addEventListener("scroll",w),()=>window.removeEventListener("scroll",w)},[]);const d=()=>{window.scrollTo({top:0,behavior:"smooth"})},m=()=>u(w=>!w);return M.jsxs(M.Fragment,{children:[M.jsxs(Ag,{$isOpen:o,onClick:m,children:[M.jsx("div",{className:"line"}),M.jsx("div",{className:"line"}),M.jsx("div",{className:"line"})]}),M.jsxs($g,{$isOpen:o,children:[f.pathname!=="/"&&M.jsxs(Kf,{to:"/","aria-label":"Home",children:[M.jsx(Gf,{src:"/cafe/HomeIcon.png",alt:"Home Icon"}),"Home"]}),f.pathname!=="/contact"&&M.jsxs(Kf,{to:"/contact","aria-label":"Contact",children:[M.jsx(Gf,{src:"/cafe/ContactIcon.png",alt:"Contact Icon"}),"Contact"]}),M.jsx(Ug,{show:a?"true":void 0,onClick:d,"aria-label":"Back to Top",children:M.jsx(Mg,{})})]})]})},Bg=se.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -301,7 +301,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   svg {
     font-size: 20px;
   }
-`,Hd=()=>M.jsxs(Bg,{children:[M.jsx("img",{src:"/Logo.png",id:"Logo",alt:"Cafe Logo"}),M.jsx("p",{children:"Find us on social media"}),M.jsx(Xf,{href:"https://www.instagram.com/lecafe.no/",target:"_blank",rel:"noopener noreferrer",children:M.jsx(Fg,{})}),M.jsx(Xf,{href:"https://www.facebook.com/profile.php?id=61553088848116",target:"_blank",rel:"noopener noreferrer",children:M.jsx(Dg,{})})]}),Wg=se.div`
+`,Hd=()=>M.jsxs(Bg,{children:[M.jsx("img",{src:"/cafe/Logo.png",id:"Logo",alt:"Cafe Logo"}),M.jsx("p",{children:"Find us on social media"}),M.jsx(Xf,{href:"https://www.instagram.com/lecafe.no/",target:"_blank",rel:"noopener noreferrer",children:M.jsx(Fg,{})}),M.jsx(Xf,{href:"https://www.facebook.com/profile.php?id=61553088848116",target:"_blank",rel:"noopener noreferrer",children:M.jsx(Dg,{})})]}),Wg=se.div`
   margin-top: 40px;
   padding: 20px;
   background: rgba(255, 250, 240, 0.8);
@@ -339,7 +339,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
       background-color: #145dbf;
     }
   }
-`,Hg=()=>M.jsxs(Wg,{children:[M.jsx("h3",{children:"Upcoming Event"}),M.jsx("p",{children:"Join us this weekend for a special event featuring live music, coffee tastings, and more!"}),M.jsx("img",{src:"/EventImage.jpg",alt:"This describes an event we are havning etc...."}),M.jsx("a",{href:"https://www.facebook.com/events/example",target:"_blank",rel:"noopener noreferrer",children:"Learn More"})]}),Vg=se.section`
+`,Hg=()=>M.jsxs(Wg,{children:[M.jsx("h3",{children:"Upcoming Event"}),M.jsx("p",{children:"Join us this weekend for a special event featuring live music, coffee tastings, and more!"}),M.jsx("img",{src:"/cafe/EventImage.jpg",alt:"This describes an event we are havning etc...."}),M.jsx("a",{href:"https://www.facebook.com/events/example",target:"_blank",rel:"noopener noreferrer",children:"Learn More"})]}),Vg=se.section`
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
