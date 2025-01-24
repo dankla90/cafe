@@ -14,7 +14,7 @@ To make changes to the website online:
     . Third run "npm run deploy" this redeploys the website, the changes should be live after a few minutes, you can see on github. 
 
 To test website changes on a pc locally:
-    - in the terminal run "npm i" or "npm install"
+    - in the terminal run "npm i" or "npm install" only once
     - then run "npm run dev" it should say what adress the page is live in usually http://localhost:5173/
 
   - To see changes in the test browser just make a change here and press controll + S to save and it should be live in your browser locally.
@@ -279,7 +279,7 @@ const Home = () => {
       <UpperSection>
         <MainContent>
           <TextSection>
-            <h1>Welcome</h1>
+            <h1>Bonjour au Cafe</h1>
             <DecorativeLine />
             <p>Discover the best coffee, pastries, and cozy vibes.</p>
             <p>We offer a delightful experience for all coffee lovers!</p>
