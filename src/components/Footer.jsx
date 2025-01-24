@@ -29,7 +29,7 @@ const Footer = () => {
     <FooterWrapper>
       <FooterText>© 2024 Le Café Pomme | All rights reserved</FooterText>
       <FooterLogo
-        src={`${process.env.PUBLIC_URL}/Logo.png`}
+        src="/Logo.png"
         alt="Le Café Pomme Logo"
       />
       <FooterText>Website by Daniel Klausen</FooterText>
