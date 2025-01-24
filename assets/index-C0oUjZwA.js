@@ -301,7 +301,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   svg {
     font-size: 20px;
   }
-`,Hd=()=>$.jsxs(Wg,{children:[$.jsx("img",{src:"/Logo.png",id:"Logo",alt:"Cafe Logo"}),$.jsx("p",{children:"Find us on social media"}),$.jsx(Xf,{href:"https://www.instagram.com/lecafe.no/",target:"_blank",rel:"noopener noreferrer",children:$.jsx($g,{})}),$.jsx(Xf,{href:"https://www.facebook.com/profile.php?id=61553088848116",target:"_blank",rel:"noopener noreferrer",children:$.jsx(Fg,{})})]});var Hg={};const Vg=se.div`
+`,Hd=()=>$.jsxs(Wg,{children:[$.jsx("img",{src:"/Logo.png",id:"Logo",alt:"Cafe Logo"}),$.jsx("p",{children:"Find us on social media"}),$.jsx(Xf,{href:"https://www.instagram.com/lecafe.no/",target:"_blank",rel:"noopener noreferrer",children:$.jsx($g,{})}),$.jsx(Xf,{href:"https://www.facebook.com/profile.php?id=61553088848116",target:"_blank",rel:"noopener noreferrer",children:$.jsx(Fg,{})})]}),Hg=se.div`
   margin-top: 40px;
   padding: 20px;
   background: rgba(255, 250, 240, 0.8);
@@ -339,7 +339,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       background-color: #145dbf;
     }
   }
-`,Qg=()=>$.jsxs(Vg,{children:[$.jsx("h3",{children:"Upcoming Event"}),$.jsx("p",{children:"Join us this weekend for a special event featuring live music, coffee tastings, and more!"}),$.jsx("img",{src:`${Hg.PUBLIC_URL}/EventImage.jpg`,alt:"This describes an event we are havning etc...."}),$.jsx("a",{href:"https://www.facebook.com/events/example",target:"_blank",rel:"noopener noreferrer",children:"Learn More"})]}),Yg=se.section`
+`,Vg=()=>$.jsxs(Hg,{children:[$.jsx("h3",{children:"Upcoming Event"}),$.jsx("p",{children:"Join us this weekend for a special event featuring live music, coffee tastings, and more!"}),$.jsx("img",{src:"/EventImage.jpg",alt:"This describes an event we are havning etc...."}),$.jsx("a",{href:"https://www.facebook.com/events/example",target:"_blank",rel:"noopener noreferrer",children:"Learn More"})]}),Qg=se.section`
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
@@ -362,12 +362,12 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       width: calc(100% - 20px);
     }
   }
-`,Kg=({url:o})=>(P.useEffect(()=>{const u=document.createElement("script");return u.src="//www.instagram.com/embed.js",u.async=!0,document.body.appendChild(u),()=>{document.body.removeChild(u)}},[]),$.jsxs(Yg,{children:[$.jsx("h2",{children:"Follow Us on Instagram"}),$.jsx("blockquote",{className:"instagram-media","data-instgrm-captioned":!0,"data-instgrm-permalink":o,"data-instgrm-version":"14",style:{background:"#FFF",border:0,borderRadius:"3px",boxShadow:"0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",margin:"1px auto",maxWidth:"90%",padding:"0",width:"calc(100% - 2px)"},children:$.jsx("div",{style:{padding:"16px"},children:$.jsx("a",{href:o,style:{background:"#FFFFFF",lineHeight:"0",padding:"0 0",textAlign:"center",textDecoration:"none",width:"100%"},target:"_blank",rel:"noreferrer",children:"View this post on Instagram"})})})]})),Gg=se.div`
+`,Yg=({url:o})=>(P.useEffect(()=>{const u=document.createElement("script");return u.src="//www.instagram.com/embed.js",u.async=!0,document.body.appendChild(u),()=>{document.body.removeChild(u)}},[]),$.jsxs(Qg,{children:[$.jsx("h2",{children:"Follow Us on Instagram"}),$.jsx("blockquote",{className:"instagram-media","data-instgrm-captioned":!0,"data-instgrm-permalink":o,"data-instgrm-version":"14",style:{background:"#FFF",border:0,borderRadius:"3px",boxShadow:"0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",margin:"1px auto",maxWidth:"90%",padding:"0",width:"calc(100% - 2px)"},children:$.jsx("div",{style:{padding:"16px"},children:$.jsx("a",{href:o,style:{background:"#FFFFFF",lineHeight:"0",padding:"0 0",textAlign:"center",textDecoration:"none",width:"100%"},target:"_blank",rel:"noreferrer",children:"View this post on Instagram"})})})]})),Kg=se.div`
   display: flex;
   flex-direction: column;
   min-height: 95vh;
   background: #fdf6e3;
-`,Xg=se.div`
+`,Gg=se.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -377,7 +377,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       min-height: 90vh;
   }
 
-`,Jg=se.div`
+`,Xg=se.div`
   flex: 1;
   margin-top: 100px;
   padding: 20px;
@@ -389,7 +389,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     flex-direction: column;
     padding-top: 20px;
   }
-`,Zg=se.div`
+`,Jg=se.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -398,7 +398,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   @media (max-width: 768px) {
     gap: 20px;
   }
-`,qg=se.div`
+`,Zg=se.div`
   display: flex;
   gap: 20px;
 
@@ -456,7 +456,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   background: #ddb892;
   margin: 20px auto;
   border-radius: 2px;
-`,bg=se.div`
+`,qg=se.div`
   margin-top: 20px;
   padding: 20px;
   background: rgba(255, 250, 240, 0.8);
@@ -477,7 +477,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     padding-inline-start: 20px;
     list-style: none;
   }
-`,ev=se.section`
+`,bg=se.section`
   flex: 1;
   position: relative;
   overflow: hidden;
@@ -487,7 +487,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   }
 
 
-`,tv=se.div`
+`,ev=se.div`
   position: relative;
   width: 100%;
   height: 100%;
@@ -506,7 +506,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   &.visible {
     opacity: 1;
   }
-`,nv=se.div`
+`,tv=se.div`
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -533,12 +533,12 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       background: #d78e41;
     }
   }
-`,rv=()=>{const[o,u]=P.useState(0),[a,s]=P.useState(!1),[f,d]=P.useState(!1),m=[{old:"/OldPictureCafe2.jpg",new:"/NewPictureCafe.png"}],w=P.useRef(null),g=P.useRef(null);P.useEffect(()=>{if(!f)return w.current=setTimeout(()=>{s(!0),d(!0)},3e3),g.current=setTimeout(()=>{x()},1e4),()=>{clearTimeout(w.current),clearTimeout(g.current)}},[o,f]);const x=()=>{d(!1),s(!1),u(R=>(R+1)%m.length)},_=()=>{d(!1),s(!1),u(R=>R===0?m.length-1:R-1)};return $.jsxs(Gg,{children:[$.jsx(Wd,{}),$.jsx(Xg,{children:$.jsxs(Jg,{children:[$.jsxs(Jf,{children:[$.jsx("h1",{children:"Bonjour au Cafe"}),$.jsx(Zf,{}),$.jsx("p",{children:"Discover the best coffee, pastries, and cozy vibes."}),$.jsx("p",{children:"We offer a delightful experience for all coffee lovers!"}),$.jsx(Zf,{}),$.jsxs(bg,{children:[$.jsx("p",{children:"Opening hours this winter:"}),$.jsx("li",{children:"Monday-Friday: 9-17"}),$.jsx("li",{children:"Saturday: 10-17"}),$.jsx("li",{children:"Sunday: 10-16"})]}),$.jsx(Hd,{})]}),$.jsxs(ev,{children:[$.jsxs(tv,{children:[$.jsx(qf,{src:m[o].old,alt:`Old Image ${o+1}`,className:a?"hidden":"visible"}),$.jsx(qf,{src:m[o].new,alt:`New Image ${o+1}`,className:a?"visible":"hidden"})]}),$.jsxs(nv,{children:[$.jsx("button",{onClick:_,children:"‹"}),$.jsx("button",{onClick:x,children:"›"})]})]})]})}),$.jsxs(Zg,{children:[$.jsxs(qg,{children:[$.jsx(Kg,{url:"https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&utm_campaign=loading"}),$.jsxs(Jf,{children:[$.jsx("h1",{children:"About Our Instagram"}),$.jsx("p",{children:"Follow us on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe."})]})]}),$.jsx(Qg,{})]})]})},ov=se.div`
+`,nv=()=>{const[o,u]=P.useState(0),[a,s]=P.useState(!1),[f,d]=P.useState(!1),m=[{old:"/OldPictureCafe2.jpg",new:"/NewPictureCafe.png"}],w=P.useRef(null),g=P.useRef(null);P.useEffect(()=>{if(!f)return w.current=setTimeout(()=>{s(!0),d(!0)},3e3),g.current=setTimeout(()=>{x()},1e4),()=>{clearTimeout(w.current),clearTimeout(g.current)}},[o,f]);const x=()=>{d(!1),s(!1),u(R=>(R+1)%m.length)},_=()=>{d(!1),s(!1),u(R=>R===0?m.length-1:R-1)};return $.jsxs(Kg,{children:[$.jsx(Wd,{}),$.jsx(Gg,{children:$.jsxs(Xg,{children:[$.jsxs(Jf,{children:[$.jsx("h1",{children:"Bonjour au Cafe"}),$.jsx(Zf,{}),$.jsx("p",{children:"Discover the best coffee, pastries, and cozy vibes."}),$.jsx("p",{children:"We offer a delightful experience for all coffee lovers!"}),$.jsx(Zf,{}),$.jsxs(qg,{children:[$.jsx("p",{children:"Opening hours this winter:"}),$.jsx("li",{children:"Monday-Friday: 9-17"}),$.jsx("li",{children:"Saturday: 10-17"}),$.jsx("li",{children:"Sunday: 10-16"})]}),$.jsx(Hd,{})]}),$.jsxs(bg,{children:[$.jsxs(ev,{children:[$.jsx(qf,{src:m[o].old,alt:`Old Image ${o+1}`,className:a?"hidden":"visible"}),$.jsx(qf,{src:m[o].new,alt:`New Image ${o+1}`,className:a?"visible":"hidden"})]}),$.jsxs(tv,{children:[$.jsx("button",{onClick:_,children:"‹"}),$.jsx("button",{onClick:x,children:"›"})]})]})]})}),$.jsxs(Jg,{children:[$.jsxs(Zg,{children:[$.jsx(Yg,{url:"https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&utm_campaign=loading"}),$.jsxs(Jf,{children:[$.jsx("h1",{children:"About Our Instagram"}),$.jsx("p",{children:"Follow us on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe."})]})]}),$.jsx(Vg,{})]})]})},rv=se.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background: #fdf6e3;
-`,iv=se.main`
+`,ov=se.main`
   flex: 1;  
   margin-top: 100px; 
   padding: 20px;
@@ -553,7 +553,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     flex-direction: column;
     padding-top: 20px;
   }
-`,lv=se.section`
+`,iv=se.section`
   flex: 1;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
@@ -588,7 +588,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   }
 
 
-`,uv=se.section`
+`,lv=se.section`
   flex: 1;  
   display: flex;
   justify-content: center;
@@ -612,11 +612,11 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     height: 100%;  
     padding-bottom: 0; 
   }
-`,av=()=>$.jsxs(ov,{children:[$.jsx(Wd,{}),$.jsxs(iv,{children:[$.jsxs(lv,{children:[$.jsx("img",{src:"/contactImage.jpg",id:"FrontPhoto",alt:"Contact Us"}),$.jsx("h1",{children:"Contact Us"}),$.jsx("p",{children:"Reach out to us for reservations, inquiries, or feedback."}),$.jsxs("p",{children:["Email: ",$.jsx("a",{href:"mailto:lafrenchtouch.co@gmail.com",children:"lafrenchtouch.co@gmail.com"})]}),$.jsx("p",{children:"Phone: +47 936 10 541"}),$.jsx(Hd,{})]}),$.jsx(uv,{children:$.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.0572058137527!2d5.312865313119024!3d60.392505475042924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfdc29bedba1d%3A0x785ef24a7a7de8ec!2sLe%20Caf%C3%A9%20Pomme!5e1!3m2!1sen!2sno!4v1736510817611!5m2!1sen!2sno",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})})]})]}),sv=se.div`
+`,uv=()=>$.jsxs(rv,{children:[$.jsx(Wd,{}),$.jsxs(ov,{children:[$.jsxs(iv,{children:[$.jsx("img",{src:"/contactImage.jpg",id:"FrontPhoto",alt:"Contact Us"}),$.jsx("h1",{children:"Contact Us"}),$.jsx("p",{children:"Reach out to us for reservations, inquiries, or feedback."}),$.jsxs("p",{children:["Email: ",$.jsx("a",{href:"mailto:lafrenchtouch.co@gmail.com",children:"lafrenchtouch.co@gmail.com"})]}),$.jsx("p",{children:"Phone: +47 936 10 541"}),$.jsx(Hd,{})]}),$.jsx(lv,{children:$.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.0572058137527!2d5.312865313119024!3d60.392505475042924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfdc29bedba1d%3A0x785ef24a7a7de8ec!2sLe%20Caf%C3%A9%20Pomme!5e1!3m2!1sen!2sno!4v1736510817611!5m2!1sen!2sno",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})})]})]}),av=se.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport */
   min-width: 315px; /* Prevent the site from shrinking below 300px */
-`,cv=se.main`
+`,sv=se.main`
   flex: 1; /* Pushes the footer to the bottom if content is shorter than the viewport */
-`,fv=()=>$.jsxs(sv,{children:[$.jsx(Pg,{}),$.jsx(cv,{children:$.jsxs(Um,{children:[$.jsx(qu,{path:"/",element:$.jsx(rv,{})}),$.jsx(qu,{path:"/contact",element:$.jsx(av,{})})]})}),$.jsx(Ng,{})]});Xh.createRoot(document.getElementById("root")).render($.jsx(st.StrictMode,{children:$.jsx(c0,{children:$.jsx(fv,{})})}));
+`,cv=()=>$.jsxs(av,{children:[$.jsx(Pg,{}),$.jsx(sv,{children:$.jsxs(Um,{children:[$.jsx(qu,{path:"/",element:$.jsx(nv,{})}),$.jsx(qu,{path:"/contact",element:$.jsx(uv,{})})]})}),$.jsx(Ng,{})]});Xh.createRoot(document.getElementById("root")).render($.jsx(st.StrictMode,{children:$.jsx(c0,{children:$.jsx(cv,{})})}));
