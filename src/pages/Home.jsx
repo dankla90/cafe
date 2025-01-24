@@ -153,14 +153,14 @@ const OpeningHours = styled.div`
     font-size: 1.3rem;
     color: #6b4e3d;
     margin-bottom: 12px;
-    padding-left: 0px;
+    padding-left: 10px;
   }
 
   li {
     font-size: 1.1rem;
     color: #4a3a29;
     margin: 8px 0;
-    padding-inline-start: 20px;
+    padding-inline-start: 30px;
     list-style: none;
   }
 `;
@@ -279,7 +279,7 @@ const Home = () => {
       <UpperSection>
         <MainContent>
           <TextSection>
-            <h1>Bonjour au Cafe</h1>
+            <h1>Welcome to our Cafe</h1>
             <DecorativeLine />
             <p>Discover the best coffee, pastries, and cozy vibes.</p>
             <p>We offer a delightful experience for all coffee lovers!</p>
@@ -322,7 +322,7 @@ const Home = () => {
           </TextSection>
         </LowerContentWrapper>
 
-        <EventComponent />
+
         {/* Uncomment the next line to display the event component */}
         {/* <EventComponent /> */}
       </LowerSection>
