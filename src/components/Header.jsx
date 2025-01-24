@@ -7,7 +7,7 @@ const HeaderWrapper = styled.header`
   top: 0;
   width: 100%;
   height: 250px;
-  background-image: url('${process.env.PUBLIC_URL}/OldPictureCafe.jpg');
+  background-image: url("/OldPictureCafe.jpg");
   background-color: ${(props) => (props.hidden ? 'transparent' : 'rgba(255, 255, 255, 0.5)')};
   background-size: 100% auto;
   background-repeat: no-repeat;
