@@ -279,7 +279,7 @@ const Home = () => {
       <UpperSection>
         <MainContent>
           <TextSection>
-            <h1>Welcome to Our Cafe</h1>
+            <h1>Welcome</h1>
             <DecorativeLine />
             <p>Discover the best coffee, pastries, and cozy vibes.</p>
             <p>We offer a delightful experience for all coffee lovers!</p>
