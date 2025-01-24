@@ -533,12 +533,12 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       background: #d78e41;
     }
   }
-`,ov=()=>{const[o,u]=P.useState(0),[a,s]=P.useState(!1),[f,d]=P.useState(!1),m=[{old:"/cafe/OldPictureCafe2.jpg",new:"/cafe/NewPictureCafe.png"}],w=P.useRef(null),g=P.useRef(null);P.useEffect(()=>{if(!f)return w.current=setTimeout(()=>{s(!0),d(!0)},3e3),g.current=setTimeout(()=>{x()},1e4),()=>{clearTimeout(w.current),clearTimeout(g.current)}},[o,f]);const x=()=>{d(!1),s(!1),u(R=>(R+1)%m.length)},_=()=>{d(!1),s(!1),u(R=>R===0?m.length-1:R-1)};return $.jsxs(Xg,{children:[$.jsx(Wd,{}),$.jsx(Jg,{children:$.jsxs(Zg,{children:[$.jsxs(Jf,{children:[$.jsx("h1",{children:"Bonjour au Cafe"}),$.jsx(Zf,{}),$.jsx("p",{children:"Discover the best coffee, pastries, and cozy vibes."}),$.jsx("p",{children:"We offer a delightful experience for all coffee lovers!"}),$.jsx(Zf,{}),$.jsxs(ev,{children:[$.jsx("p",{children:"Opening hours this winter:"}),$.jsx("li",{children:"Monday-Friday: 9-17"}),$.jsx("li",{children:"Saturday: 10-17"}),$.jsx("li",{children:"Sunday: 10-16"})]}),$.jsx(Hd,{})]}),$.jsxs(tv,{children:[$.jsxs(nv,{children:[$.jsx(qf,{src:m[o].old,alt:`Old Image ${o+1}`,className:a?"hidden":"visible"}),$.jsx(qf,{src:m[o].new,alt:`New Image ${o+1}`,className:a?"visible":"hidden"})]}),$.jsxs(rv,{children:[$.jsx("button",{onClick:_,children:"‹"}),$.jsx("button",{onClick:x,children:"›"})]})]})]})}),$.jsxs(qg,{children:[$.jsxs(bg,{children:[$.jsx(Gg,{url:"https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&utm_campaign=loading"}),$.jsxs(Jf,{children:[$.jsx("h1",{children:"About Our Instagram"}),$.jsx("p",{children:"Follow us on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe."})]})]}),$.jsx(Yg,{})]})]})};var iv={};const lv=se.div`
+`,ov=()=>{const[o,u]=P.useState(0),[a,s]=P.useState(!1),[f,d]=P.useState(!1),m=[{old:"/cafe/OldPictureCafe2.jpg",new:"/cafe/NewPictureCafe.png"}],w=P.useRef(null),g=P.useRef(null);P.useEffect(()=>{if(!f)return w.current=setTimeout(()=>{s(!0),d(!0)},3e3),g.current=setTimeout(()=>{x()},1e4),()=>{clearTimeout(w.current),clearTimeout(g.current)}},[o,f]);const x=()=>{d(!1),s(!1),u(R=>(R+1)%m.length)},_=()=>{d(!1),s(!1),u(R=>R===0?m.length-1:R-1)};return $.jsxs(Xg,{children:[$.jsx(Wd,{}),$.jsx(Jg,{children:$.jsxs(Zg,{children:[$.jsxs(Jf,{children:[$.jsx("h1",{children:"Bonjour au Cafe"}),$.jsx(Zf,{}),$.jsx("p",{children:"Discover the best coffee, pastries, and cozy vibes."}),$.jsx("p",{children:"We offer a delightful experience for all coffee lovers!"}),$.jsx(Zf,{}),$.jsxs(ev,{children:[$.jsx("p",{children:"Opening hours this winter:"}),$.jsx("li",{children:"Monday-Friday: 9-17"}),$.jsx("li",{children:"Saturday: 10-17"}),$.jsx("li",{children:"Sunday: 10-16"})]}),$.jsx(Hd,{})]}),$.jsxs(tv,{children:[$.jsxs(nv,{children:[$.jsx(qf,{src:m[o].old,alt:`Old Image ${o+1}`,className:a?"hidden":"visible"}),$.jsx(qf,{src:m[o].new,alt:`New Image ${o+1}`,className:a?"visible":"hidden"})]}),$.jsxs(rv,{children:[$.jsx("button",{onClick:_,children:"‹"}),$.jsx("button",{onClick:x,children:"›"})]})]})]})}),$.jsxs(qg,{children:[$.jsxs(bg,{children:[$.jsx(Gg,{url:"https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&utm_campaign=loading"}),$.jsxs(Jf,{children:[$.jsx("h1",{children:"About Our Instagram"}),$.jsx("p",{children:"Follow us on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe."})]})]}),$.jsx(Yg,{})]})]})},iv=se.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background: #fdf6e3;
-`,uv=se.main`
+`,lv=se.main`
   flex: 1;  
   margin-top: 100px; 
   padding: 20px;
@@ -553,7 +553,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     flex-direction: column;
     padding-top: 20px;
   }
-`,av=se.section`
+`,uv=se.section`
   flex: 1;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
@@ -588,7 +588,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   }
 
 
-`,sv=se.section`
+`,av=se.section`
   flex: 1;  
   display: flex;
   justify-content: center;
@@ -612,11 +612,11 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     height: 100%;  
     padding-bottom: 0; 
   }
-`,cv=()=>$.jsxs(lv,{children:[$.jsx(Wd,{}),$.jsxs(uv,{children:[$.jsxs(av,{children:[$.jsx("img",{src:`${iv.PUBLIC_URL}/contactImage.jpg`,id:"FrontPhoto",alt:"Contact Us"}),$.jsx("h1",{children:"Contact Us"}),$.jsx("p",{children:"Reach out to us for reservations, inquiries, or feedback."}),$.jsxs("p",{children:["Email: ",$.jsx("a",{href:"mailto:lafrenchtouch.co@gmail.com",children:"lafrenchtouch.co@gmail.com"})]}),$.jsx("p",{children:"Phone: +47 936 10 541"}),$.jsx(Hd,{})]}),$.jsx(sv,{children:$.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.0572058137527!2d5.312865313119024!3d60.392505475042924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfdc29bedba1d%3A0x785ef24a7a7de8ec!2sLe%20Caf%C3%A9%20Pomme!5e1!3m2!1sen!2sno!4v1736510817611!5m2!1sen!2sno",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})})]})]}),fv=se.div`
+`,sv=()=>$.jsxs(iv,{children:[$.jsx(Wd,{}),$.jsxs(lv,{children:[$.jsxs(uv,{children:[$.jsx("img",{src:"cafe/contactImage.jpg",id:"FrontPhoto",alt:"Contact Us"}),$.jsx("h1",{children:"Contact Us"}),$.jsx("p",{children:"Reach out to us for reservations, inquiries, or feedback."}),$.jsxs("p",{children:["Email: ",$.jsx("a",{href:"mailto:lafrenchtouch.co@gmail.com",children:"lafrenchtouch.co@gmail.com"})]}),$.jsx("p",{children:"Phone: +47 936 10 541"}),$.jsx(Hd,{})]}),$.jsx(av,{children:$.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.0572058137527!2d5.312865313119024!3d60.392505475042924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfdc29bedba1d%3A0x785ef24a7a7de8ec!2sLe%20Caf%C3%A9%20Pomme!5e1!3m2!1sen!2sno!4v1736510817611!5m2!1sen!2sno",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})})]})]}),cv=se.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport */
   min-width: 315px; /* Prevent the site from shrinking below 300px */
-`,dv=se.main`
+`,fv=se.main`
   flex: 1; /* Pushes the footer to the bottom if content is shorter than the viewport */
-`,pv=()=>$.jsxs(fv,{children:[$.jsx(Pg,{}),$.jsx(dv,{children:$.jsxs(Um,{children:[$.jsx(qu,{path:"/",element:$.jsx(ov,{})}),$.jsx(qu,{path:"/contact",element:$.jsx(cv,{})})]})}),$.jsx(Lg,{})]});Xh.createRoot(document.getElementById("root")).render($.jsx(st.StrictMode,{children:$.jsx(c0,{children:$.jsx(pv,{})})}));
+`,dv=()=>$.jsxs(cv,{children:[$.jsx(Pg,{}),$.jsx(fv,{children:$.jsxs(Um,{children:[$.jsx(qu,{path:"/",element:$.jsx(ov,{})}),$.jsx(qu,{path:"/contact",element:$.jsx(sv,{})})]})}),$.jsx(Lg,{})]});Xh.createRoot(document.getElementById("root")).render($.jsx(st.StrictMode,{children:$.jsx(c0,{children:$.jsx(dv,{})})}));
