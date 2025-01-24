@@ -109,7 +109,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   @media (max-width: 768px) {
     height: 5em;
   }
-`,Pg=()=>{const[o,u]=P.useState(!1),[a,s]=P.useState(0);return P.useEffect(()=>{let f=window.scrollY;const d=()=>{const m=window.scrollY;m>f&&m>100?u(!0):m<20&&u(!1),f=m,s(m)};return window.addEventListener("scroll",d),()=>window.removeEventListener("scroll",d)},[]),$.jsxs(kg,{hidden:o,children:[$.jsx(Eg,{to:"/",children:"Le Café Pomme"}),$.jsx(Cg,{src:"/Logo.png",alt:"Cafe Pomme Logo"})]})};var _g={};const Rg=se.footer`
+`,Pg=()=>{const[o,u]=P.useState(!1),[a,s]=P.useState(0);return P.useEffect(()=>{let f=window.scrollY;const d=()=>{const m=window.scrollY;m>f&&m>100?u(!0):m<20&&u(!1),f=m,s(m)};return window.addEventListener("scroll",d),()=>window.removeEventListener("scroll",d)},[]),$.jsxs(kg,{hidden:o,children:[$.jsx(Eg,{to:"/",children:"Le Café Pomme"}),$.jsx(Cg,{src:"cafe/Logo.png",alt:"Cafe Pomme Logo"})]})};var _g={};const Rg=se.footer`
   background-color: #333;
   color: #fff;
   text-align: center;
