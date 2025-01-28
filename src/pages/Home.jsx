@@ -321,11 +321,11 @@ const Home = () => {
           <TextSection>
             <h1>Welcome to our Cafe</h1>
             <DecorativeLine />
-            <p>Discover the best coffee, pastries, and cozy vibes.</p>
-            <p>We offer a delightful experience for all coffee lovers!</p>
+            <p>At Le Café Pomme you can discover the best coffee, pastries, and cozy vibes.</p>
+            <p>We offer a delightful experience for all coffee lovers here at Le Café Pomme</p>
             <DecorativeLine />
             <OpeningHours>
-              <p>Opening hours this winter:</p>
+              <p>Le Café Pomme Opening hours this winter:</p>
               <li>Monday-Friday: 9-17</li>
               <li>Saturday: 10-17</li>
               <li>Sunday: 10-16</li>
@@ -358,7 +358,7 @@ const Home = () => {
           <InstagramPost url="https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&amp;utm_campaign=loading" />
           <TextSection>
             <h1>About Our Instagram</h1>
-            <p>Follow us on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe.</p>
+            <p>Follow Le Café Pomme on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe.</p>
           </TextSection>
         </LowerContentWrapper>
 
