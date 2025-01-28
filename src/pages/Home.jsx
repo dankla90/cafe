@@ -181,24 +181,40 @@ const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f0f0f0;
 `;
 
 const Image = styled.img`
   position: absolute;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: opacity 1.5s ease;
+  max-width: none; /* Allow it to scale fully within the container */
+  max-height: none; /* Allow it to scale fully within the container */
+  object-fit: cover; /* Ensure the image fills the container, cropping if necessary */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 1.5s ease, transform 0.8s ease;
 
   &.hidden {
     opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
   }
 
   &.visible {
     opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 `;
+
+
 
 const Controls = styled.div`
   position: absolute;
@@ -234,15 +250,19 @@ const Home = () => {
   const [showNewImage, setShowNewImage] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const images = [
-    { old: '/OldPictureCafe2.jpg', new: '/NewPictureCafe.png' },
+    { old: '/OldPictureCafe2.jpg', new: '/NewPictureCafe.jpg' },
+    { old: 'coffe1.jpg', new: 'ChocolatChaud_65,-.jpg'},
+    { old: '/tarteletteCitronMeringue_80,-.jpg', new: '/tarteletteSaison_80,-.jpg' },
+    { old: '/Baptiste1.jpg', new: '/Baptiste2.jpg' },
 
   ];
 
   const transitionTimeoutRef = useRef(null);
   const cycleTimeoutRef = useRef(null);
 
-  useEffect(() => {
-    if (isTransitioning) return;
+  const resetTimers = () => {
+    clearTimeout(transitionTimeoutRef.current);
+    clearTimeout(cycleTimeoutRef.current);
 
     transitionTimeoutRef.current = setTimeout(() => {
       setShowNewImage(true);
@@ -251,7 +271,11 @@ const Home = () => {
 
     cycleTimeoutRef.current = setTimeout(() => {
       handleNext();
-    }, 10000);
+    }, 6000);
+  };
+
+  useEffect(() => {
+    resetTimers();
 
     return () => {
       clearTimeout(transitionTimeoutRef.current);
@@ -260,17 +284,33 @@ const Home = () => {
   }, [currentImageIndex, isTransitioning]);
 
   const handleNext = () => {
+    clearTimeout(transitionTimeoutRef.current);
+    clearTimeout(cycleTimeoutRef.current);
+
     setIsTransitioning(false);
     setShowNewImage(false);
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+
+    // Small delay to allow the new image to hide before showing the next one
+    setTimeout(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      resetTimers();
+    }, 300);
   };
 
   const handlePrev = () => {
+    clearTimeout(transitionTimeoutRef.current);
+    clearTimeout(cycleTimeoutRef.current);
+
     setIsTransitioning(false);
     setShowNewImage(false);
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+
+    // Small delay to allow the new image to hide before showing the previous one
+    setTimeout(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      );
+      resetTimers();
+    }, 300);
   };
 
   return (
@@ -321,7 +361,6 @@ const Home = () => {
             <p>Follow us on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe.</p>
           </TextSection>
         </LowerContentWrapper>
-
 
         {/* Uncomment the next line to display the event component */}
         {/* <EventComponent /> */}
