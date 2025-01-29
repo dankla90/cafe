@@ -44,10 +44,11 @@ const EventContainer = styled.div`
 const EventComponent = () => {
   return (
     <EventContainer>
-      <h3>Upcoming Event</h3>
-      <p>Join us this weekend for a special event featuring live music, coffee tastings, and more!</p>
-      <img src="/EventImage.jpg" alt="This describes an event we are havning etc...." />
-      <a href="https://www.facebook.com/events/example" target="_blank" rel="noopener noreferrer">
+      <h3>Upcoming Event the 15th of February</h3>
+      <p>And as the story goes when Martin Luther was asked what he would do if the world were to end tomorrow, he answered, “I would plant and apple tree today.”
+      So Kaffe Klee and Le Cafe Pomme decided to plant our first apple tree together in form of a collaboration.</p>
+      <img src="/EventImage.jpg" alt="This describes an event we are having the 15th of february." />
+      <a href="https://www.kleekaffe.no/appleandleaf" target="_blank" rel="noopener noreferrer">
         Learn More
       </a>
     </EventContainer>

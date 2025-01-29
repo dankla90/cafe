@@ -361,7 +361,7 @@ const Home = () => {
             <p>Follow Le Café Pomme on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe.</p>
           </TextSection>
         </LowerContentWrapper>
-
+        <EventComponent />
         {/* Uncomment the next line to display the event component */}
         {/* <EventComponent /> */}
       </LowerSection>
