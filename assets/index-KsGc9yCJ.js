@@ -633,4 +633,4 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   min-width: 315px; /* Prevent the site from shrinking below 300px */
 `,a1=se.main`
   flex: 1; /* Pushes the footer to the bottom if content is shorter than the viewport */
-`,s1=()=>M.jsxs(u1,{children:[M.jsx(Cg,{}),M.jsx(a1,{children:M.jsxs(Um,{children:[M.jsx(qu,{path:"/",element:M.jsx(t1,{})}),M.jsx(qu,{path:"/contact",element:M.jsx(l1,{})})]})}),M.jsx(Rg,{})]});var c1={};Xh.createRoot(document.getElementById("root")).render(M.jsx(st.StrictMode,{children:M.jsx(c0,{basename:c1.PUBLIC_URL,children:M.jsx(s1,{})})}));
+`,s1=()=>M.jsxs(u1,{children:[M.jsx(Cg,{}),M.jsx(a1,{children:M.jsxs(Um,{children:[M.jsx(qu,{exact:!0,path:"/",element:M.jsx(t1,{})}),M.jsx(qu,{exact:!0,path:"/contact",element:M.jsx(l1,{})})]})}),M.jsx(Rg,{})]});var c1={};Xh.createRoot(document.getElementById("root")).render(M.jsx(st.StrictMode,{children:M.jsx(c0,{basename:c1.PUBLIC_URL,children:M.jsx(s1,{})})}));
