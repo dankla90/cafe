@@ -110,11 +110,6 @@ const TextSection = styled.section`
     padding-left: 50px;
   }
 
-  li {
-    font-size: 1.1rem;
-    color: #4a3a29;
-    margin: 5px 0;
-  }
 
   @media (max-width: 768px) {
     padding: 20px;
@@ -145,9 +140,10 @@ const DecorativeLine = styled.div`
 const OpeningHours = styled.div`
   margin-top: 20px;
   padding: 20px;
-  background: rgba(255, 250, 240, 0.8);
+  background: #fdf6e3;
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 5%;
 
   p {
     font-size: 1.3rem;
@@ -159,7 +155,7 @@ const OpeningHours = styled.div`
   li {
     font-size: 1.1rem;
     color: #4a3a29;
-    margin: 8px 0;
+    margin: 15px 0;
     padding-inline-start: 30px;
     list-style: none;
   }
@@ -321,14 +317,21 @@ const Home = () => {
           <TextSection>
             <h1>Welcome to our Cafe</h1>
             <DecorativeLine />
-            <p>At Le Café Pomme you can discover the best coffee, pastries, and cozy vibes.</p>
-            <p>We offer a delightful experience for all coffee lovers here at Le Café Pomme</p>
+              <p>Welcome to Le Café Pomme — your cozy corner in Bergen for exceptional 
+                coffee, fresh pastries, and warm, welcoming vibes. Whether you're a local or 
+                just visiting, our café is the perfect place to relax and enjoy the taste of France.</p>
+
+              <p>Bienvenue! Vi er en koselig fransk-inspirert kafé og konditori i hjertet av Bergen. 
+                Perfekt for deg som elsker autentisk bakverk, fersk kaffe og god stemning. 
+                Vi savner Frankrike, men setter stor pris på Norge - derfor baker vi med de beste norske 
+                råvarene fra lokale produsenter. Kom gjerne innom for en varm kopp kaffe (eller te), en sprø croissant 
+                og byens beste franske smil!</p>
+
             <DecorativeLine />
             <OpeningHours>
-              <p>Le Café Pomme Opening hours this winter:</p>
-              <li>Monday-Friday: 9-17</li>
-              <li>Saturday: 10-17</li>
-              <li>Sunday: 10-16</li>
+              <p>Le Café Pomme Opening hours:</p>
+              <li>Monday-Friday: 8-18</li>
+              <li>Saturday and Sunday: 10-18</li>
             </OpeningHours>
             <Social />
           </TextSection>
@@ -359,6 +362,8 @@ const Home = () => {
           <TextSection>
             <h1>About Our Instagram</h1>
             <p>Follow Le Café Pomme on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe.</p>
+            <p>We share our passion for coffee, pastries, and the cozy atmosphere of our cafe. 
+              Join our community and stay connected with us!</p>
           </TextSection>
         </LowerContentWrapper>
 

@@ -37,6 +37,7 @@ const TextSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-left: 2%;
 
   #FrontPhoto {
     width: 100%;
@@ -73,7 +74,7 @@ const MapSection = styled.section`
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 100%; /
+  width: 100%; 
   Min-height: 300px;
 
   iframe {
