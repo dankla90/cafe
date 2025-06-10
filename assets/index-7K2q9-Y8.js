@@ -428,11 +428,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     padding-left: 50px;
   }
 
-  li {
-    font-size: 1.1rem;
-    color: #4a3a29;
-    margin: 5px 0;
-  }
 
   @media (max-width: 768px) {
     padding: 20px;
@@ -459,9 +454,10 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 `,Xg=se.div`
   margin-top: 20px;
   padding: 20px;
-  background: rgba(255, 250, 240, 0.8);
+  background: #fdf6e3;
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 5%;
 
   p {
     font-size: 1.3rem;
@@ -473,7 +469,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   li {
     font-size: 1.1rem;
     color: #4a3a29;
-    margin: 8px 0;
+    margin: 15px 0;
     padding-inline-start: 30px;
     list-style: none;
   }
@@ -547,12 +543,12 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       background: #d78e41;
     }
   }
-`,bg=()=>{const[o,u]=P.useState(0),[a,s]=P.useState(!1),[f,d]=P.useState(!1),m=[{old:"/OldPictureCafe2.jpg",new:"/NewPictureCafe.jpg"},{old:"coffe1.jpg",new:"ChocolatChaud_65,-.jpg"},{old:"/tarteletteCitronMeringue_80,-.jpg",new:"/tarteletteSaison_80,-.jpg"},{old:"/Baptiste1.jpg",new:"/Baptiste2.jpg"}],w=P.useRef(null),g=P.useRef(null),x=()=>{clearTimeout(w.current),clearTimeout(g.current),w.current=setTimeout(()=>{s(!0),d(!0)},3e3),g.current=setTimeout(()=>{_()},6e3)};P.useEffect(()=>(x(),()=>{clearTimeout(w.current),clearTimeout(g.current)}),[o,f]);const _=()=>{clearTimeout(w.current),clearTimeout(g.current),d(!1),s(!1),setTimeout(()=>{u(C=>(C+1)%m.length),x()},300)},L=()=>{clearTimeout(w.current),clearTimeout(g.current),d(!1),s(!1),setTimeout(()=>{u(C=>C===0?m.length-1:C-1),x()},300)};return A.jsxs(Vg,{children:[A.jsx(Wd,{}),A.jsx(Qg,{children:A.jsxs(Yg,{children:[A.jsxs(Jf,{children:[A.jsx("h1",{children:"Welcome to our Cafe"}),A.jsx(Zf,{}),A.jsx("p",{children:"At Le Café Pomme you can discover the best coffee, pastries, and cozy vibes."}),A.jsx("p",{children:"We offer a delightful experience for all coffee lovers here at Le Café Pomme"}),A.jsx(Zf,{}),A.jsxs(Xg,{children:[A.jsx("p",{children:"Le Café Pomme Opening hours this winter:"}),A.jsx("li",{children:"Monday-Friday: 9-17"}),A.jsx("li",{children:"Saturday: 10-17"}),A.jsx("li",{children:"Sunday: 10-16"})]}),A.jsx(Hd,{})]}),A.jsxs(Jg,{children:[A.jsxs(Zg,{children:[A.jsx(qf,{src:m[o].old,alt:`Old Image ${o+1}`,className:a?"hidden":"visible"}),A.jsx(qf,{src:m[o].new,alt:`New Image ${o+1}`,className:a?"visible":"hidden"})]}),A.jsxs(qg,{children:[A.jsx("button",{onClick:L,children:"‹"}),A.jsx("button",{onClick:_,children:"›"})]})]})]})}),A.jsx(Kg,{children:A.jsxs(Gg,{children:[A.jsx(Hg,{url:"https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&utm_campaign=loading"}),A.jsxs(Jf,{children:[A.jsx("h1",{children:"About Our Instagram"}),A.jsx("p",{children:"Follow Le Café Pomme on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe."})]})]})})]})},e1=se.div`
+`,bg=()=>{const[o,u]=P.useState(0),[a,s]=P.useState(!1),[f,d]=P.useState(!1),m=[{old:"/OldPictureCafe2.jpg",new:"/NewPictureCafe.jpg"},{old:"coffe1.jpg",new:"ChocolatChaud_65,-.jpg"},{old:"/tarteletteCitronMeringue_80,-.jpg",new:"/tarteletteSaison_80,-.jpg"},{old:"/Baptiste1.jpg",new:"/Baptiste2.jpg"}],w=P.useRef(null),g=P.useRef(null),x=()=>{clearTimeout(w.current),clearTimeout(g.current),w.current=setTimeout(()=>{s(!0),d(!0)},3e3),g.current=setTimeout(()=>{_()},6e3)};P.useEffect(()=>(x(),()=>{clearTimeout(w.current),clearTimeout(g.current)}),[o,f]);const _=()=>{clearTimeout(w.current),clearTimeout(g.current),d(!1),s(!1),setTimeout(()=>{u(C=>(C+1)%m.length),x()},300)},L=()=>{clearTimeout(w.current),clearTimeout(g.current),d(!1),s(!1),setTimeout(()=>{u(C=>C===0?m.length-1:C-1),x()},300)};return A.jsxs(Vg,{children:[A.jsx(Wd,{}),A.jsx(Qg,{children:A.jsxs(Yg,{children:[A.jsxs(Jf,{children:[A.jsx("h1",{children:"Welcome to our Cafe"}),A.jsx(Zf,{}),A.jsx("p",{children:"Welcome to Le Café Pomme — your cozy corner in Bergen for exceptional coffee, fresh pastries, and warm, welcoming vibes. Whether you're a local or just visiting, our café is the perfect place to relax and enjoy the taste of France."}),A.jsx("p",{children:"Bienvenue! Vi er en koselig fransk-inspirert kafé og konditori i hjertet av Bergen. Perfekt for deg som elsker autentisk bakverk, fersk kaffe og god stemning. Vi savner Frankrike, men setter stor pris på Norge - derfor baker vi med de beste norske råvarene fra lokale produsenter. Kom gjerne innom for en varm kopp kaffe (eller te), en sprø croissant og byens beste franske smil!"}),A.jsx(Zf,{}),A.jsxs(Xg,{children:[A.jsx("p",{children:"Le Café Pomme Opening hours:"}),A.jsx("li",{children:"Monday-Friday: 8-18"}),A.jsx("li",{children:"Saturday and Sunday: 10-18"})]}),A.jsx(Hd,{})]}),A.jsxs(Jg,{children:[A.jsxs(Zg,{children:[A.jsx(qf,{src:m[o].old,alt:`Old Image ${o+1}`,className:a?"hidden":"visible"}),A.jsx(qf,{src:m[o].new,alt:`New Image ${o+1}`,className:a?"visible":"hidden"})]}),A.jsxs(qg,{children:[A.jsx("button",{onClick:L,children:"‹"}),A.jsx("button",{onClick:_,children:"›"})]})]})]})}),A.jsx(Kg,{children:A.jsxs(Gg,{children:[A.jsx(Hg,{url:"https://www.instagram.com/reel/CxX_n5ctzln/?utm_source=ig_embed&utm_campaign=loading"}),A.jsxs(Jf,{children:[A.jsx("h1",{children:"About Our Instagram"}),A.jsx("p",{children:"Follow Le Café Pomme on Instagram for the latest updates, promotions, and beautiful snapshots of our cafe."}),A.jsx("p",{children:"We share our passion for coffee, pastries, and the cozy atmosphere of our cafe. Join our community and stay connected with us!"})]})]})})]})},ev=se.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background: #fdf6e3;
-`,t1=se.main`
+`,tv=se.main`
   flex: 1;  
   margin-top: 100px; 
   padding: 20px;
@@ -567,7 +563,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     flex-direction: column;
     padding-top: 20px;
   }
-`,n1=se.section`
+`,nv=se.section`
   flex: 1;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
@@ -576,6 +572,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-left: 2%;
 
   #FrontPhoto {
     width: 100%;
@@ -602,7 +599,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   }
 
 
-`,r1=se.section`
+`,rv=se.section`
   flex: 1;  
   display: flex;
   justify-content: center;
@@ -611,7 +608,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 100%; /
+  width: 100%; 
   Min-height: 300px;
 
   iframe {
@@ -626,11 +623,11 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     height: 100%;  
     padding-bottom: 0; 
   }
-`,o1=()=>A.jsxs(e1,{children:[A.jsx(Wd,{}),A.jsxs(t1,{children:[A.jsxs(n1,{children:[A.jsx("img",{src:"/contactImage.jpg",id:"FrontPhoto",alt:"Contact Us"}),A.jsx("h1",{children:"Contact Us"}),A.jsx("p",{children:"Reach out to us for reservations, inquiries, or feedback."}),A.jsxs("p",{children:["Email: ",A.jsx("a",{href:"mailto:lafrenchtouch.co@gmail.com",children:"lafrenchtouch.co@gmail.com"})]}),A.jsx("p",{children:"Phone: +47 936 10 541"}),A.jsx(Hd,{})]}),A.jsx(r1,{children:A.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.0572058137527!2d5.312865313119024!3d60.392505475042924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfdc29bedba1d%3A0x785ef24a7a7de8ec!2sLe%20Caf%C3%A9%20Pomme!5e1!3m2!1sen!2sno!4v1736510817611!5m2!1sen!2sno",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})})]})]}),i1=se.div`
+`,ov=()=>A.jsxs(ev,{children:[A.jsx(Wd,{}),A.jsxs(tv,{children:[A.jsxs(nv,{children:[A.jsx("img",{src:"/contactImage.jpg",id:"FrontPhoto",alt:"Contact Us"}),A.jsx("h1",{children:"Contact Us"}),A.jsx("p",{children:"Reach out to us for reservations, inquiries, or feedback."}),A.jsxs("p",{children:["Email: ",A.jsx("a",{href:"mailto:lafrenchtouch.co@gmail.com",children:"lafrenchtouch.co@gmail.com"})]}),A.jsx("p",{children:"Phone: +47 936 10 541"}),A.jsx(Hd,{})]}),A.jsx(rv,{children:A.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.0572058137527!2d5.312865313119024!3d60.392505475042924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfdc29bedba1d%3A0x785ef24a7a7de8ec!2sLe%20Caf%C3%A9%20Pomme!5e1!3m2!1sen!2sno!4v1736510817611!5m2!1sen!2sno",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})})]})]}),iv=se.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport */
   min-width: 315px; /* Prevent the site from shrinking below 300px */
-`,l1=se.main`
+`,lv=se.main`
   flex: 1; /* Pushes the footer to the bottom if content is shorter than the viewport */
-`,u1=()=>A.jsxs(i1,{children:[A.jsx(Cg,{}),A.jsx(l1,{children:A.jsxs(Um,{children:[A.jsx(qu,{exact:!0,path:"/",element:A.jsx(bg,{})}),A.jsx(qu,{exact:!0,path:"/contact",element:A.jsx(o1,{})})]})}),A.jsx(Rg,{})]});var a1={};Xh.createRoot(document.getElementById("root")).render(A.jsx(st.StrictMode,{children:A.jsx(c0,{basename:a1.PUBLIC_URL,children:A.jsx(u1,{})})}));
+`,uv=()=>A.jsxs(iv,{children:[A.jsx(Cg,{}),A.jsx(lv,{children:A.jsxs(Um,{children:[A.jsx(qu,{exact:!0,path:"/",element:A.jsx(bg,{})}),A.jsx(qu,{exact:!0,path:"/contact",element:A.jsx(ov,{})})]})}),A.jsx(Rg,{})]});var av={};Xh.createRoot(document.getElementById("root")).render(A.jsx(st.StrictMode,{children:A.jsx(c0,{basename:av.PUBLIC_URL,children:A.jsx(uv,{})})}));
