@@ -105,7 +105,7 @@ const Contact = () => {
           <p>
             Email: <a href="mailto:lafrenchtouch.co@gmail.com">lafrenchtouch.co@gmail.com</a>
           </p>
-          <p>Phone: +4755091100</p>
+          <p>Phone: <a href="tel:+4755091100">+47 55 09 11 00</a></p>
 
           <Social />
         </TextSection>
