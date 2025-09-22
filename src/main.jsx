@@ -8,6 +8,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* Remove the basename for testing locally 
       basename={process.env.PUBLIC_URL}
+      add it back when deploying to GitHub Pages or similar services
+      Router basename={process.env.PUBLIC_URL}
     */}
     <Router basename={process.env.PUBLIC_URL}>
       <App />

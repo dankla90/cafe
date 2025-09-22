@@ -329,9 +329,9 @@ const Home = () => {
 
             <DecorativeLine />
             <OpeningHours>
-              <p>Le Café Pomme Opening hours:</p>
-              <li>Monday-Friday: 8-18</li>
-              <li>Saturday and Sunday: 10-18</li>
+              <p>Le Café Pomme Opening hours this winter:</p>
+              <li>Monday to Friday:  09-17</li>
+              <li>Saturday & Sunday: 10-17</li>
             </OpeningHours>
             <Social />
           </TextSection>
