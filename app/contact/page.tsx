@@ -66,7 +66,7 @@ const Content = styled.div`
   min-height: 560px;
 
   @media (max-width: 900px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `
 
@@ -83,6 +83,8 @@ const InfoPanel = styled.div`
     width: 100%;
     padding: 40px 32px;
     gap: 32px;
+    align-items: center;
+    text-align: center;
   }
 `
 

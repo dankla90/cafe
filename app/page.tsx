@@ -336,15 +336,24 @@ const InfoBar = styled.section`
   background: #4e3728;
   color: white;
   padding: 64px 40px;
+
+  @media (max-width: 768px) {
+    padding: 48px 32px;
+  }
+`
+
+const InfoInner = styled.div`
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  gap: 80px;
+  justify-content: space-between;
+  gap: 40px;
 
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 40px;
-    padding: 48px 32px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 `
 
@@ -437,6 +446,7 @@ export default function Home() {
 
       {/* Info bar */}
       <InfoBar aria-label="Opening hours and location">
+        <InfoInner>
         <InfoBlock>
           <InfoLabel>Opening hours</InfoLabel>
           {openingHours.periods.map((p) => (
@@ -447,13 +457,15 @@ export default function Home() {
         </InfoBlock>
         <InfoBlock>
           <InfoLabel>Find us</InfoLabel>
-          <InfoValue>Nøstegaten 47{'\n'}5010 Bergen</InfoValue>
+          <InfoValue><InfoLink href="/contact">Nøstegaten 47</InfoLink></InfoValue>
+          <InfoValue><InfoLink href="/contact">5010 Bergen</InfoLink></InfoValue>
         </InfoBlock>
         <InfoBlock>
           <InfoLabel>Get in touch</InfoLabel>
           <InfoLink href="tel:+4755091100">+47 55 09 11 00</InfoLink>
           <InfoLink href="mailto:lafrenchtouch.co@gmail.com">lafrenchtouch.co@gmail.com</InfoLink>
         </InfoBlock>
+        </InfoInner>
       </InfoBar>
 
       {/* Photo grid */}
