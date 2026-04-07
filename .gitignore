@@ -13,6 +13,7 @@ dist-ssr
 *.local
 .next
 .netlify
+out
 
 # Editor directories and files
 .vscode/*

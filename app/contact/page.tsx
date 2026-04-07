@@ -10,6 +10,8 @@ const PageWrapper = styled.div`
   padding-top: ${HEADER_HEIGHT}px;
   min-height: 100vh;
   background: #fdf6e3;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 768px) {
     padding-top: ${MOBILE_HEADER_HEIGHT}px;
@@ -64,6 +66,7 @@ const Content = styled.div`
   display: flex;
   gap: 0;
   min-height: 560px;
+  flex: 1;
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
