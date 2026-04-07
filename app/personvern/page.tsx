@@ -91,7 +91,7 @@ export default function Personvern() {
           <Body>
             Le Café Pomme<br />
             Nøstegaten 47, 5010 Bergen<br />
-            E-post: lafrenchtouch.co@gmail.com<br />
+            E-post: bestilling.lecafepomme@gmail.com<br />
             Telefon: +47 55 09 11 00
           </Body>
         </Section>
@@ -136,7 +136,7 @@ export default function Personvern() {
           <SectionTitle>Dine rettigheter</SectionTitle>
           <Body>
             Under GDPR har du rett til innsyn, retting og sletting av personopplysninger vi
-            eventuelt måtte ha om deg. Ta kontakt med oss på lafrenchtouch.co@gmail.com dersom
+            eventuelt måtte ha om deg. Ta kontakt med oss på bestilling.lecafepomme@gmail.com dersom
             du har spørsmål om personvern.
           </Body>
         </Section>

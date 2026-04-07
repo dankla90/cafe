@@ -12,7 +12,7 @@ const jsonLd = {
   description: 'Fransk-inspirert kafé og konditori i Bergen',
   url: 'https://lecafepomme.no',
   telephone: '+4755091100',
-  email: 'lafrenchtouch.co@gmail.com',
+  email: 'bestilling.lecafepomme@gmail.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Nøstegaten 47',
@@ -463,7 +463,7 @@ export default function Home() {
         <InfoBlock>
           <InfoLabel>Get in touch</InfoLabel>
           <InfoLink href="tel:+4755091100">+47 55 09 11 00</InfoLink>
-          <InfoLink href="mailto:lafrenchtouch.co@gmail.com">lafrenchtouch.co@gmail.com</InfoLink>
+          <InfoLink href="mailto:bestilling.lecafepomme@gmail.com">bestilling.lecafepomme@gmail.com</InfoLink>
         </InfoBlock>
         </InfoInner>
       </InfoBar>

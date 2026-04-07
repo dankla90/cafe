@@ -252,8 +252,8 @@ export default function Contact() {
           <InfoBlock>
             <InfoLabel>Get in touch</InfoLabel>
             <InfoLink href="tel:+4755091100">+47 55 09 11 00</InfoLink>
-            <InfoLink href="mailto:lafrenchtouch.co@gmail.com">
-              lafrenchtouch.co@gmail.com
+            <InfoLink href="mailto:bestilling.lecafepomme@gmail.com">
+              bestilling.lecafepomme@gmail.com
             </InfoLink>
           </InfoBlock>
 
