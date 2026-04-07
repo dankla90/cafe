@@ -64,6 +64,10 @@ export const metadata: Metadata = {
       'Fransk-inspirert kafé og konditori i Bergen. Autentisk bakverk, fersk kaffe og croissanter på Nøstegaten 47.',
     images: ['/frontpage.jpg'],
   },
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
   robots: {
     index: true,
     follow: true,
