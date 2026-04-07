@@ -57,6 +57,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Le Café Pomme — Kafé & Konditori i Bergen',
+    description:
+      'Fransk-inspirert kafé og konditori i Bergen. Autentisk bakverk, fersk kaffe og croissanter på Nøstegaten 47.',
+    images: ['/frontpage.jpg'],
+  },
   robots: {
     index: true,
     follow: true,
