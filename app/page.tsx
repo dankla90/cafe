@@ -5,41 +5,6 @@ import Socials from '@/components/Socials'
 import { openingHours } from '@/data/hours'
 import styled, { keyframes } from 'styled-components'
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'CafeOrCoffeeShop',
-  name: 'Le Café Pomme',
-  description: 'Fransk-inspirert kafé og konditori i Bergen',
-  url: 'https://lecafepomme.no',
-  telephone: '+4755091100',
-  email: 'bestilling.lecafepomme@gmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Nøstegaten 47',
-    addressLocality: 'Bergen',
-    postalCode: '5010',
-    addressCountry: 'NO',
-  },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '17:00',
-    },
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Saturday', 'Sunday'],
-      opens: '10:00',
-      closes: '17:00',
-    },
-  ],
-  sameAs: [
-    'https://www.instagram.com/lecafe.no/',
-    'https://www.facebook.com/profile.php?id=61553088848116',
-  ],
-}
-
 /* ─── Hero ─────────────────────────────────────────────────── */
 
 const HeroSection = styled.section`
@@ -395,11 +360,6 @@ const InfoLink = styled.a`
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       {/* Hero */}
       <HeroSection aria-label="Hero">
         <HeroOverlay />
@@ -427,14 +387,15 @@ export default function Home() {
           <WelcomeText>
             <p>
               Welcome to Le Café Pomme — your cozy corner in Bergen for exceptional coffee, fresh
-              pastries, and warm, welcoming vibes. Whether you&apos;re a local or just visiting, our
-              café is the perfect place to relax and enjoy the taste of France.
+              pastries, and warm, welcoming vibes. Whether you&apos;re stopping in for breakfast,
+              lunch, or just a quiet afternoon with something sweet, our café is the perfect place
+              to relax and enjoy the taste of France.
             </p>
             <p>
-              Vi er en koselig fransk-inspirert kafé og konditori i hjertet av Bergen. Vi savner
-              Frankrike, men setter stor pris på Norge — derfor baker vi med de beste norske råvarene
-              fra lokale produsenter. Kom gjerne innom for en varm kopp kaffe, en sprø croissant og
-              byens beste franske smil!
+              Vi er en koselig fransk-inspirert kafé og konditori i hjertet av Bergen. Vi serverer
+              frokost og lunsj daglig — fra ferske croissanter om morgenen til quiche og smørbrød
+              midt på dagen. Vi baker med de beste norske råvarene fra lokale produsenter, og flere
+              av våre bakverk er tilgjengelig i glutenvennlige varianter. Kom gjerne innom!
             </p>
           </WelcomeText>
           <Socials />

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import { Beau_Rivage, Gwendolyn } from 'next/font/google'
 import localFont from 'next/font/local'
 import StyledComponentsRegistry from '@/lib/registry'
@@ -74,10 +75,56 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CafeOrCoffeeShop',
+  name: 'Le Café Pomme',
+  url: 'https://lecafepomme.no',
+  telephone: '+4755091100',
+  email: 'bestilling.lecafepomme@gmail.com',
+  image: 'https://lecafepomme.no/frontpage.jpg',
+  priceRange: '$$',
+  servesCuisine: ['French', 'Patisserie', 'Coffee'],
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Nøstegaten 47',
+    addressLocality: 'Bergen',
+    postalCode: '5010',
+    addressCountry: 'NO',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 60.392505,
+    longitude: 5.312865,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '18:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Saturday', 'Sunday'],
+      opens: '10:00',
+      closes: '18:00',
+    },
+  ],
+  sameAs: [
+    'https://www.instagram.com/lecafe.no/',
+    'https://www.facebook.com/profile.php?id=61553088848116',
+  ],
+}
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="no">
       <body className={`${beauRivage.variable} ${gwendolyn.variable} ${bagnard.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <StyledComponentsRegistry>
           <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%' }}>
             <Header />

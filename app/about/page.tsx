@@ -166,9 +166,9 @@ export default function About() {
           <StoryText>
             <h2>Come as you are</h2>
             <p>
-              Le Café Pomme is for everyone. A quick espresso on the way to work, a long lunch
-              with a friend, a quiet afternoon with a book and a tartlet. We&apos;re open Monday
-              to Friday 09–17, Saturday and Sunday 10–17.
+              Le Café Pomme is for everyone. Breakfast before work, lunch with a friend, or a
+              quiet afternoon with a book and a tartlet. We serve food from opening until close —
+              Monday to Friday 08–18, Saturday and Sunday 10–18.
             </p>
             <p>
               You&apos;ll find us at Nøstegaten 47. We hope to see you soon.
